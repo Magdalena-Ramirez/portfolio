@@ -59,6 +59,7 @@
     <h3 >My School</h3>
     <div id="map">
     <script>
+    <div id = marker>
       function initMap() {
         var NCSL = {lat: 38.657222, lng: -121.494149};
         var GWCL = {lat: 37.771098, lng: -122.401661};
@@ -70,7 +71,7 @@
           zoom: 20,
           center: GWCL
         });
-        <div id = marker>
+       
             var NCS = new google.maps.Marker({
                 position: NCSL,
                 map: map
