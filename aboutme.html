@@ -27,12 +27,12 @@
 <script>
     function myFunction() {
         var image = document.getElementById('map');
-        if (initMap = "NCSL") {
-        	initMap = "GWCL";
+        if (initMap = "NCSM") {
+        	initMap = "GWCM";
         	initMap.alt = "Girls Who Code Summer Imersion Program at Adobe in San Francisco.";
         }
         else {
-        	initMap = "NCSL";
+        	initMap = "NCSM";
         	initMap.alt = "Natomas Charter School Preforming and Fine Arts Academy";
         }
       }
@@ -62,9 +62,13 @@
       function initMap() {
         var NCSL = {lat: 38.657222, lng: -121.494149};
         var GWCL = {lat: 37.771098, lng: -122.401661};
-        var map = new google.maps.Map(document.getElementById("map"), {
+        var NCSM = new google.maps.Map(document.getElementById("map"), {
           zoom: 20,
           center: NCSL
+        });
+        var GWCM = new google.maps.Map(document.getElementById("map"), {
+          zoom: 20,
+          center: GWCL
         });
         var NCS = new google.maps.Marker({
           position: NCSL,
